@@ -7,7 +7,7 @@
     Title="CameraRotation">
 
     <ShellContent
-        Title="Home"
+        Title="Camera"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
