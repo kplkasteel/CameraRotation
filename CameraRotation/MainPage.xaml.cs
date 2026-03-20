@@ -163,12 +163,12 @@ namespace CameraRotation
         {
             try
             {
-                await InternalCamera.StopCameraAsync();
+                await StartCameraSafeAsync();
 
                 MainThread.BeginInvokeOnMainThread(ConfigureResponsiveLayout);
 
-                await InternalCamera.StartCameraAsync();
-                
+                await StopCameraSafeAsync();
+
             }
             catch (Exception exception)
             {
